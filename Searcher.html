@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Index and Search for Mist World by Dimples</title>
+    <style>
+        body {
+            background-color: black;
+            color: yellow;
+        }
+
+        #searchInput {
+            margin-bottom: 10px;
+        }
+
+        #noResultsMessage {
+            color: red;
+            display: none;
+        }
+
+        #lastUpdated {
+            margin-top: 20px;
+        }
+
+        .download-link {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        #unknownSoundSection {
+            margin-top: 20px;
+        }
+
+        #unknownSoundCheckbox {
+            margin-bottom: 10px;
+        }
+
+        #unknownSoundForm {
+            display: none;
+        }
+
+        /* Added styles for the Back To Hub button */
+        #BackToHubButton {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Blue "Back To Hub" button -->
+    <button id="BackToHubButton" onclick="window.location.href='https://mistportal.github.io/MistPortalHub/Hub.html'">Back To Hub</button>
+
+    <h1>Sound and Search Index for Mist World by Dimples</h1>
+
+    <p>Discover, Explore and search for the Sounds of Mist World</p>
+    <p>Below you can find a link on Google Drive to download the entire sound folder of Mist World in .Ogg format. Make sure to press Shift+Enter to launch it in a different Tab.</p>
+
+    <!-- Download Link -->
+    <a href="https://drive.google.com/file/d/1zcQ0_2fT9txjE6NQTZ2jRUynm_SGEtGj/view?usp=sharing" class="download-link">Download Mist World Sounds in .ogg</a>
+
+    <h2>How it Works</h2>
+    <ol>
+        <li><strong>Search Functionality:</strong> Enter your search query in the box below and press "Enter" to find specific sounds with ease. You can do this by sound title or by sound ID</li>
+        <li><strong>Real-time Filtering:</strong> Results are dynamically filtered when you press "Enter," revealing matching sounds.</li>
+        <li><strong>Full List:</strong> Want to see the full list again? Simply refresh the webpage after your search.</li>
+    </ol>
+
+    <div id="unknownSoundSection">
+        <h2>Unknown Sound Detection</h2>
+        <p>Help Dimples identify the unknown sounds in Mist World! Your detective skills can make this page even better. Simply check the box below, and the form will appear.</p>
+        <input type="checkbox" id="unknownSoundCheckbox"> Show Unknown Sound Detection Form
+        <div id="unknownSoundForm">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeFT0xw1Zhjwu5j0qW8XsocYou4nzE1OUaNHyHlrhAcc469KQ/viewform?embedded=true" width="640" height="1008" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+    </div>
+
+    <h2>Get Started</h2>
+    <ol>
+        <li>Enter your search query in the box below and press "Enter."</li>
+        <li>Explore the filtered results in the list below the Search Box.</li>
+    </ol>
+
+    <input type="text" id="searchInput" placeholder="Search...">
+
+    <ul id="soundList">
+        <li data-tags="Login Drumb 1000">Login Drumb 1000</li>
+        <li data-tags="Login Menu Select 1001">Login Menu Select 1001</li>
+        <li data-tags="Login Menu Enter 1002">Login Menu Enter 1002</li>
+        <li data-tags="Login Menu back 1003">Login Menu back 1003</li>
+        <li data-tags="Login menu Failed Registration. When you fail to register your email 1004">Login menu Failed Registration. When you fail to register your email 1004</li>
+        <li data-tags="Menu Error 1005">Menu Error 1005</li>
+        <li data-tags="Navigation Target Beacon 1006">Navigation Target Beacon 1006</li>
+        <li data-tags="Team Target Beacon 1007">Team Target Beacon 1007</li>
+        <li data-tags="Targeting a Corpse 1008">Targeting a Corpse 1008</li>
+        <li data-tags="Targeting Items On The Ground. Such as items from Fireworks 1009">Targeting Items On The Ground. Such as items from Fireworks 1009</li>
+        <li data-tags="Team Target Cast. The one you hear when you place a beacon on a target in a team 1010">Team Target Cast. The one you hear when you place a beacon on a target in a team 1010</li>
+        <li data-tags="Unknown Bonk 1011">Unknown Bonk 1011</li>
+        <li data-tags="Bring Up In Game Menu, such as Profile, Announcements, lag, etc 1012">Bring Up In Game Menu, such as Profile, Announcements, lag, etc 1012</li>
+        <li data-tags="Bring Up In Game Sub Menu. Typically after you've brought up a main menu 1013">Bring Up In Game Sub Menu. Typically after you've brought up a main menu 1013</li>
+        <li data-tags="in Game menu Select. When you press W and S in a menu 1014">in Game menu Select. When you press W and S in a menu 1014</li>
+        <li data-tags="In Game Menu Enter. Little bubble sound after you choose a selection within a menu 1015">In Game Menu Enter. Little bubble sound after you choose a selection within a menu 1015</li>
+        <li data-tags="Dismiss In Game menu 1016">Dismiss In Game menu 1016</li>
+        <li data-tags="Dismiss In Game Sub Menu 1017">Dismiss In Game Sub Menu 1017</li>
+        <li data-tags="Interacting with any NPC that brings up a menu 1018">Interacting with any NPC that brings up a menu 1018</li>        <li data-tags="End Of Item Inventory. heard when your navigating through your backpack 1019">End Of Item Inventory. heard when your navigating through your backpack 1019</li>
+        <li data-tags="Equipment Item Equipped. Also the same sound when your looking through your talents and encounter one that is enabled 1020">Equipment Item Equipped. Also the same sound when your looking through your talents and encounter one that is enabled 1020</li>
+        <li data-tags="Unknown 1021">Unknown 1021</li>
+        <li data-tags="No Skill Assigned. When you press an attack key that has nothing assigned to it 1022">No Skill Assigned. When you press an attack key that has nothing assigned to it 1022</li>
+        <li data-tags="No Target Focused. Plays when your tapping an attack key and there either isn't anything in range or there isn't one focused 1023">No Target Focused. Plays when your tapping an attack key and there either isn't anything in range or there isn't one focused 1023</li>
+        <li data-tags="Nearby and Team Chat 1024">Nearby and Team Chat 1024</li>
+        <li data-tags="PM Incoming Private Message 1025">PM Incoming Private Message 1025</li>
+        <li data-tags="Battle Report. Usually heard a second or two after a dungeon 1026">Battle Report. Usually heard a second or two after a dungeon 1026</li>
+        <li data-tags="Unknown 1027">Unknown 1027</li>
+        <li data-tags="Unknown 1028">Unknown 1028</li>
+        <li data-tags="your Death. This plays after you have died, dead 1029">your Death. This plays after you have died, dead 1029</li>
+        <li data-tags="Magic Chimes. Plays when the mage in the Newbie Village restores your HP and when you receive a contribution chest 1030">Magic Chimes. Plays when the mage in the Newbie Village restores your HP and when you receive a contribution chest 1030</li>
+        <li data-tags="Direction Change Woosh. You hear this when ever your character changes direction 1031">Direction Change Woosh. You hear this when ever your character changes direction 1031</li>
+        <li data-tags="Player collision. Heard when you bump into another player 1032">Player collision. Heard when you bump into another player 1032</li>
+        <li data-tags="Character Spawn. Typically heard when someone logs on nearby or enters the map. Some Pets such as Eagles make this sound too 1033">Character Spawn. Typically heard when someone logs on nearby or enters the map. Some Pets such as Eagles make this sound too 1033</li>
+        <li data-tags="De spawn. When a Character/Player, Pet or Mob/Monster disappears from the map 1034">De spawn. When a Character/Player, Pet or Mob/Monster disappears from the map 1034</li>
+        <li data-tags="Spawning pet or Mob/monster. You hear this when some Pets are spawned and mostly when monsters spawn nearby 1035">Spawning pet or Mob/monster. You hear this when some Pets are spawned and mostly when monsters spawn nearby 1035</li>
+        <li data-tags="Secondary Spawn sound for Mob/Monsters. Its a strange distorted crack that plays sometimes when a Monsters spawns nearby 1036">Secondary Spawn sound for Mob/Monsters. Its a strange distorted crack that plays sometimes when a Monsters spawns nearby 1036</li>
+        <li data-tags="Spawn sound for Pets. Its an echoing wobbly sound typically heard when someone spawns in a beetle Pet 1037">Spawn sound for Pets. Its an echoing wobbly sound typically heard when someone spawns in a beetle Pet 1037</li>
+        <li data-tags="Map Reward Announcement. Heard when someone receives a resource chest from fishing, mining or herb collecting 1038">Map Reward Announcement. Heard when someone receives a resource chest from fishing, mining or herb collecting 1038</li>
+        <li data-tags="Global Reward Announcement. Typically heard when someone receives something from killing a boss or getting something rare in a competition 1039">Global Reward Announcement. Typically heard when someone receives something from killing a boss or getting something rare in a competition 1039</li>
+        <li data-tags="Releasing a pet, possibly other uses 1040">Releasing a pet, possibly other uses 1040</li>
+        <li data-tags="Unknown. Possibly solo competition announcement 1041">Unknown. Possibly solo competition announcement 1041</li>
+        <li data-tags="Unknown Announcement 1042">Unknown Announcement 1042</li>
+        <li data-tags="Map Loud Speaker. Heard when someone uses a Map Announcement card 1043">Map Loud Speaker. Heard when someone uses a Map Announcement card 1043</li>
+        <li data-tags="Global Loud Speaker. Heard when someone uses a global broadcast card 1044">Global Loud Speaker. Heard when someone uses a global broadcast card 1044</li>
+        <li data-tags="Level Up. When a player reaches a new level 1045">Level Up. When a player reaches a new level 1045</li>
+        <li data-tags="Pet Level Up. When a pet reaches a new level 1046">Pet Level Up. When a pet reaches a new level 1046</li>
+        <li data-tags="Pet Levels Skill. When your pet gains a new level 1047">Pet Levels Skill. When your pet gains a new level 1047</li>
+        <li data-tags="Ready? Go!. Heard when you enter a competition 1048">Ready? Go!. Heard when you enter a competition 1048</li>
+        <li data-tags="Competition Over Bell 1049">Competition Over Bell 1049</li>
+        <li data-tags="Winner. Heard when you or your team wins a competition 1050">Winner. Heard when you or your team wins a competition 1050</li>
+        <li data-tags="Loser. Heard when you or your team loses a competition 1051">Loser. Heard when you or your team loses a competition 1051</li>
+        <li data-tags="Move item up/down. Heard when rearranging items in your Inventory 1052">Move item up/down. Heard when rearranging items in your Inventory 1052</li>
+        <li data-tags="Possibly, Email/Password changed 1053">Possibly, Email/Password changed 1053</li>
+        <li data-tags="Team Creation. When you or someone else makes a team 1054">Team Creation. When you or someone else makes a team 1054</li>
+        <li data-tags="Team Disband 1055">Team Disband 1055</li>
+        <li data-tags="Team Change Alert. When your team is renamed or someone becomes the new leader 1056">Team Change Alert. When your team is renamed or someone becomes the new leader 1056</li>
+        <li data-tags="Team Applicant. When someone applies to your team 1057">Team Applicant. When someone applies to your team 1057</li>
+        <li data-tags="Refusing Or Declining a Teammate 1058">Refusing Or Declining a Teammate 1058</li>
+        <li data-tags="Teammate Joins the team 1059">Teammate Joins the team 1059</li>
+        <li data-tags="Teammate Quits the Team 1060">Teammate Quits the Team 1060</li>
+        <li data-tags="Contact online. Plays when your navigating through your contacts 1061">Contact online. Plays when your navigating through your contacts 1061</li>
+        <li data-tags="Unknown. Possibly Gang notification of some kind 1062">Unknown. Possibly Gang notification of some kind 1062</li>
+        <li data-tags="Possibly, Gang wins competition / Gang War 1063">Possibly, Gang wins competition / Gang War 1063</li>
+        <li data-tags="Unknown. Possibly a Gang notification 1064">Unknown. Possibly a Gang notification 1064</li>
+        <li data-tags="Gang Applicant. When your a Gang Elder you'll hear this when someone applies to join the Gang 1065">Gang Applicant. When your a Gang Elder you'll hear this when someone applies to join the Gang 1065</li>
+        <li data-tags="Unknown. possibly when a Gang Applicant is refused 1066">Unknown. possibly when a Gang Applicant is refused 1066</li>
+        <li data-tags="Possibly, Gang Applicant accepted into the Gang 1067">Possibly, Gang Applicant accepted into the Gang 1067</li>
+        <li data-tags="Unknown. Possibly when someone leaves the Gang 1068">Unknown. Possibly when someone leaves the Gang 1068</li>
+        <li data-tags="Unknown Gang Alert 1069">Unknown Gang Alert 1069</li>
+        <li data-tags="Unknown Gang Alert 1070">Unknown Gang Alert 1070</li>
+        <li data-tags="Unknown Gang Alert 1071">Unknown Gang Alert 1071</li>
+        <li data-tags="Unknown Gang Alert 1072">Unknown Gang Alert 1072</li>
+        <li data-tags="Global Announcement. Typically heard when someone kills a Boss 1073">Global Announcement. Typically heard when someone kills a Boss 1073</li>
+        <li data-tags="Unknown. Not commonly heard 1074">Unknown. Not commonly heard 1074</li>
+        <li data-tags="Possibly, Reward Announcement. Typically heard when you win an item for your gang in a dungeon. Could also be when a team kills a Boss 1075">Possibly, Reward Announcement. Typically heard when you win an item for your gang in a dungeon. Could also be when a team kills a Boss 1075</li>
+        <li data-tags="New Announcement notification from the Developers / Admins 1076">New Announcement notification from the Developers / Admins 1076</li>
+        <li data-tags="Unread Announcement 1077">Unread Announcement 1077</li>
+        <li data-tags="New Gang Announcement 1078">New Gang Announcement 1078</li>
+        <li data-tags="Unread Gang Announcement 1079">Unread Gang Announcement 1079</li>
+        <li data-tags="New Private Message 1080">New Private Message 1080</li>
+        <li data-tags="Unread Private Message 1081">Unread Private Message 1081</li>
+        <li data-tags="Announcement Chimes. Possibly heard globally and when an Elder makes an Broadcast in a Gang 1082">Announcement Chimes. Possibly heard globally and when an Elder makes an Broadcast in a Gang 1082</li>
+        <li data-tags="Gang Warning. Heard when someone enters your Gang that has been placed on alert or watch 1083">Gang Warning. Heard when someone enters your Gang that has been placed on alert or watch 1083</li>
+        <li data-tags="Gang Mission Or Dungeon is turned on/off 1084">Gang Mission Or Dungeon is turned on/off 1084</li>
+        <li data-tags="Unknown. A commonly heard Menu Popup 1085">Unknown. A commonly heard Menu Popup 1085</li>
+        <li data-tags="Failure. Possibly Wedding proposal rejected 1086">Failure. Possibly Wedding proposal rejected 1086</li>
+        <li data-tags="Wedding Marriage Proposal Accepted. All players near the church hear this 1087">Wedding Marriage Proposal Accepted. All players near the church hear this 1087</li>
+        <li data-tags="Divorce Confirmation, are you sure?. Wedding 1088">Divorce Confirmation, are you sure?. Wedding 1088</li>
+        <li data-tags="Possibly, Divorce completed. Wedding 1089">Possibly, Divorce completed. Wedding 1089</li>
+        <li data-tags="Wedding Starts. Possibly Royal Wedding 1090">Wedding Starts. Possibly Royal Wedding 1090</li>
+        <li data-tags="Unknown 1091">Unknown 1091</li>
+        <li data-tags="Unknown 1092">Unknown 1092</li>
+        <li data-tags="Unknown 1093">Unknown 1093</li>
+        <li data-tags="Unknown. Possibly something to do with Weddings 1094">Unknown. Possibly something to do with Weddings 1094</li>
+        <li data-tags="Unknown 1095">Unknown 1095</li>
+        <li data-tags="Unknown Magical Chime 1096">Unknown Magical Chime 1096</li>
+        <li data-tags="Unknown 1097">Unknown 1097</li>
+        <li data-tags="Wedding Invite. Heard when you get the popup notification that your being invited to a Wedding 1098">Wedding Invite. Heard when you get the popup notification that your being invited to a Wedding 1098</li>
+        <li data-tags="Unknown 1099">Unknown 1099</li>
+        <li data-tags="Possibly, Gang Mission. When you accept a Mission from your Gang 1100">Possibly, Gang Mission. When you accept a Mission from your Gang 1100</li>
+        <li data-tags="Gang Mission Halfway Done. Heard when you collect information for a mission as the first step in the quest 1101">Gang Mission Halfway Done. Heard when you collect information for a mission as the first step in the quest 1101</li>
+        <li data-tags="Gang Mission Completed 1102">Gang Mission Completed 1102</li>
+        <li data-tags="Cancel a Gang Mission or Quest 1103">Cancel a Gang Mission or Quest 1103</li>
+• <li data-tags="Turn on a Mission 1104">Turn on a Mission 1104</li>
+        <li data-tags="Turn off a Mission 1105">Turn Off a Mission 1105</li>
+        <li data-tags="Gang Assassination. When a Gang mate assassinates a target placed with the Gang Token 1106">Gang Assassination. When a Gang mate assassinates a target placed with the Gang Token 1106</li>
+        <li data-tags="Repairing Equipment In a Blacksmith 1107">Repairing Equipment In a Blacksmith 1107</li>
+        <li data-tags="Recharge. After you successfully recharge your Diamonds 1108">Recharge. After you successfully recharge your Diamonds 1108</li>
+        <li data-tags="Bank Deposit Gold 1109">Bank Deposit Gold 1109</li>
+        <li data-tags="Bank Withdraw Gold 1110">Bank Withdraw Gold 1110</li>
+        <li data-tags="Unknown. Possibly something to do with Diamonds 1111">Unknown. Possibly something to do with Diamonds 1111</li>
+        <li data-tags="Claiming a Daily Reward. Either VIP or newbie package 1112">Claiming a Daily Reward. Either VIP or newbie package 1112</li>
+        <li data-tags="Bonus Vitality Purchased 1113">Bonus Vitality Purchased 1113</li>
+        <li data-tags="Possibly, Converting Shards to larger Gems 1114">Possibly, Converting Shards to larger Gems 1114</li>
+        <li data-tags="Gem To Shards. When you break down a High level Gem to a lower level or to Shards 1115">Gem To Shards. When you break down a High level Gem to a lower level or to Shards 1115</li>
+        <li data-tags="Gem Spin. The sound you get when your attempting to craft 3 lower gems into a high Gem 1116">Gem Spin. The sound you get when your attempting to craft 3 lower gems into a high Gem 1116</li>
+        <li data-tags="Gem Success. When a Gem successfully combines into a higher level 1117">Gem Success. When a Gem successfully combines into a higher level 1117</li>
+        <li data-tags="Gem In Equipment. When placing a gem into an Equipment Socket 1118">Gem In Equipment. When placing a gem into an Equipment Socket 1118</li>
+        <li data-tags="Gem Removed From Equipment. When removing a Gem from an Equipment Socket 1119">Gem Removed From Equipment. When removing a Gem from an Equipment Socket 1119</li>
+        <li data-tags="Socket. When you re socket your Equipment 1120">Socket. When you re socket your Equipment 1120</li>
+        <li data-tags="Equipment Enhance Attempt. When you select to enhance your Equipment and their are no fails or successes yet 1121">Equipment Enhance Attempt. When you select to enhance your Equipment and their are no fails or successes yet 1121</li>
+        <li data-tags="Equipment Enhance Success. When your Equipment successfully razes to the next level! 1122">Equipment Enhance Success. When your Equipment successfully razes to the next level! 1122</li>
+        <li data-tags="Equipment Enhance Fail. The dreaded sound of your Equipment level dropping to the level below 1123">Equipment Enhance Fail. The dreaded sound of your Equipment level dropping to the level below 1123</li>
+        <li data-tags="Potion Craft. When you make Potions from Pelts, blood, etc 1124">Potion Craft. When you make Potions from Pelts, blood, etc 1124</li>
+        <li data-tags="Food Craft. When you make Food from Jerky 1125">Food Craft. When you make Food from Jerky 1125</li>
+        <li data-tags="Craft Equipment 1126">Craft Equipment 1126</li>
+        <li data-tags="Elevation. When you elevate your Equipment 1127">Elevation. When you elevate your Equipment 1127</li>
+        <li data-tags="Possibly, Bid begins. Gang Auction 1128">Possibly, Bid begins. Gang Auction 1128</li>
+        <li data-tags="Possibly, Placing a Gang Bid 1129">Possibly, Placing a Gang Bid 1129</li>
+        <li data-tags="Possibly, Gang Auction Ends 1130">Possibly, Gang Auction Ends 1130</li>
+        <li data-tags="Possibly, Gang Donation 1131">Possibly, Gang Donation 1131</li>
+        <li data-tags="New Gang Build. When a Construction project is completed in your Gang 1132">New Gang Build. When a Construction project is completed in your Gang 1132</li>
+        <li data-tags="Gang Build Constructing. When you use a little Hammer and Saw to build a construction in your Gang 1133">Gang Build Constructing. When you use a little Hammer and Saw to build a construction in your Gang 1133</li>
+        <li data-tags="Gang Build Construction Task 1134">Gang Build Construction Task 1134</li>
+        <li data-tags="Unknown 1135">Unknown 1135</li>
+        <li data-tags="Unknown. Possibly the sound of a Highland Wall collapsing 1136">Unknown. Possibly the sound of a Highland Wall collapsing 1136</li>
+        <li data-tags="unknown. Some kind of collapsing sound 1137">unknown. Some kind of collapsing sound 1137</li>
+        <li data-tags="Unknown Crumbling Sound 1138">Unknown Crumbling Sound 1138</li>
+        <li data-tags="Possibly, Person A pointed an Elder Position 1139">Possibly, Person A pointed an Elder Position 1139</li>
+        <li data-tags="Unknown. Possibly something to do with Gangs 1140">Unknown. Possibly something to do with Gangs 1140</li>
+        <li data-tags="unknown Gang Sound 1141">unknown Gang Sound 1141</li>
+        <li data-tags="Unknown 1142">Unknown 1142</li>
+        <li data-tags="Unknown 1143">Unknown 1143</li>
+        <li data-tags="Unknown 1144">Unknown 1144</li>
+        <li data-tags="Unknown 1145">Unknown 1145</li>
+        <li data-tags="Unknown 1146">Unknown 1146</li>
+        <li data-tags="Unknown Electrical Buzz 1147">Unknown Electrical Buzz 1147</li>
+        <li data-tags="Unknown 1148">Unknown 1148</li>
+        <li data-tags="Unknown 1149">Unknown 1149</li>
+        <li data-tags="Unknown 1150">Unknown 1150</li>
+        <li data-tags="Unknown 1151">Unknown 1151</li>
+        <li data-tags="Door Open. Heard when you open some doors in some Dungeons 1152">Door Open. Heard when you open some doors in some Dungeons 1152</li>
+        <li data-tags="Cultivate Talent Points 1153">Cultivate Talent Points 1153</li>
+        <li data-tags="Cultivate Talent Points Success 1154">Cultivate Talent Points Success 1154</li>
+        <li data-tags="Talent Skills Changed and Applied. When you change or alter your Talent Tree 1155">Talent Skills Changed and Applied. When you change or alter your Talent Tree 1155</li>
+        <li data-tags="Forgotten life skills. Profession skills 1156">Forgotten life skills. Profession skills 1156</li>
+        <li data-tags="Highland Cannon. Gang 1157">Highland Cannon. Gang 1157</li>
+        <li data-tags="Highland Shell hits. Gang 1158">Highland Shell hits. Gang 1158</li>
+        <li data-tags="Gang War begins 1159">Gang War begins 1159</li>
+        <li data-tags="The Highland War Begins. Gang 1160">The Highland War Begins. Gang 1160</li>
+        <li data-tags="Start a Highland War. Gang 1161">Start a Highland War. Gang 1161</li>
+        <li data-tags="Free High Ground Battle. Gang 1162">Free High Ground Battle. Gang 1162</li>
+        <li data-tags="Start feeding Gang Beasts 1163">Start feeding Gang Beasts 1163</li>
+        <li data-tags="Feed Gang Beasts 1164">Feed Gang Beasts 1164</li>
+        <li data-tags="Cancel a Gang Beast 1165">Cancel a Gang Beast 1165</li>
+        <li data-tags="Gang Battle Bid notification 1166">Gang Battle Bid notification 1166</li>
+        <li data-tags="Gang War Cancelled 1167">Gang War Cancelled 1167</li>
+        <li data-tags="Unknown. Clang 1168">Unknown. Clang 1168</li>
+        <li data-tags="Tips For Joining The Gang War 1169">Tips For Joining The Gang War 1169</li>
+        <li data-tags="Gang War Begins. Starts 1170">Gang War Begins. Starts 1170</li>
+        <li data-tags="Gang War Ends 1171">Gang War Ends 1171</li>
+        <li data-tags="Pet Attempt To Mutate 1172">Pet Attempt To Mutate 1172</li>
+        <li data-tags="Pet Successfully Mutates 1173">Pet Successfully Mutates 1173</li>
+        <li data-tags="Spin In Lucky Draw 1174">Spin In Lucky Draw 1174</li>
+        <li data-tags="Purchase Buy Lottery tickets. Near Lucky Draw Wonderland Tulip 1175">Purchase Buy Lottery tickets. Near Lucky Draw Wonderland Tulip 1175</li>
+        <li data-tags="Under The Sea. Near Lucky Draw Tulip 1176">Under The Sea. Near Lucky Draw Tulip 1176</li>
+        <li data-tags="Wonderland. Near Lucky Draw tulip 1177">Wonderland. Near Lucky Draw tulip 1177</li>
+        <li data-tags="Hunted Ended 1178">Hunted Ended 1178</li>
+        <li data-tags="Game Program Update. You hear this when you open the game and there is an Update in progress 1179">Game Program Update. You hear this when you open the game and there is an Update in progress 1179</li>
+        <li data-tags="Possibly. Competition Announcement Starting 1180">Possibly. Competition Announcement Starting 1180</li>
+        <li data-tags="Unknown. Its a menu sound, but can not remember what one 1181">Unknown. Its a menu sound, but can not remember what one 1181</li>
+        <li data-tags="Error 1182">Error 1182</li>
+        <li data-tags="Open The Treasure Chest 1183">Open The Treasure Chest 1183</li>
+        <li data-tags="Smelting Equipment In Blacksmith 1184">Smelting Equipment In Blacksmith 1184</li>
+        <li data-tags="Unknown Menu Sound 1185">Unknown Menu Sound 1185</li>
+        <li data-tags="Unknown 1186">Unknown 1186</li>
+        <li data-tags="End of Teleportation sound, heard when Mages and Elves land in their new location and other stuff does it to 1187">End of Teleportation sound, heard when Mages and Elves land in their new location and other stuff does it to 1187</li>
+        <li data-tags="Boom. Heard when the big Boss is about to enter your Dungeon such as Nether and Raith 1188">Boom. Heard when the big Boss is about to enter your Dungeon such as Nether and Raith 1188</li>
+        <li data-tags="Boom sound Heard when next round of monsters are coming in Nether or Raith or other Dungeon 1189">Boom sound Heard when next round of monsters are coming in Nether or Raith or other Dungeon 1189</li>
+        <li data-tags="Press the Button 1190">Press the Button 1190</li>
+        <li data-tags="Unknown. Some kind of funky song, maybe a reward sound 1191">Unknown. Some kind of funky song, maybe a reward sound 1191</li>
+        <li data-tags="Unknown 1192">Unknown 1192</li>
+        <li data-tags="Push a button on a control panel 1193">Push a button on a control panel 1193</li>
+        <li data-tags="Unknown. Some interaction in a Dungeon possibly 1194">Unknown. Some interaction in a Dungeon possibly 1194</li>
+        <li data-tags="Alarm. Heard right before the Bomb is about to explode in the stealth Dungeon 1195">Alarm. Heard right before the Bomb is about to explode in the stealth Dungeon 1195</li>
+        <li data-tags="Unknown. Its an explosion, but not sure where from 1196">Unknown. Its an explosion, but not sure where from 1196</li>
+        <li data-tags="Unknown. Possibly the Bomb exploding in Stealth Dungeon 1197">Unknown. Possibly the Bomb exploding in Stealth Dungeon 1197</li>
+        <li data-tags="Unknown. Possibly a Fail sounds 1198">Unknown. Possibly a Fail sounds 1198</li>
+        <li data-tags="Possibly. The wedding Horse and cart has left the Church 1199">Possibly. The wedding Horse and cart has left the Church 1199</li>
+        <li data-tags="Possibly. Different kind of Wedding has started. Sound of fireworks and balloons 1200">Possibly. Different kind of Wedding has started. Sound of fireworks and balloons 1200</li>
+        <li data-tags="Map Broadcast with non Royal wedding Broadcast Card 1201">Map Broadcast with non Royal wedding Broadcast Card 1201</li>
+        <li data-tags="Possibly. World Broadcast Wedding non Royal Card 1202">Possibly. World Broadcast Wedding non Royal Card 1202</li>
+        <li data-tags="Possibly. Royal Wedding Marriage world Broadcast Card Announcement 1203">Possibly. Royal Wedding Marriage world Broadcast Card Announcement 1203</li>
+        <li data-tags="Unknown 1204">Unknown 1204</li>
+        <li data-tags="Wedding Announcement. Bride or Groom gives their vowels Everyone on the Game hears it 1205">Wedding Announcement. Bride or Groom gives their vowels Everyone on the Game hears it 1205</li>
+        <li data-tags="Unknown 1206">Unknown 1206</li>
+        <li data-tags="Unknown. Can't place my finger on it but its a toggle of some kind 1207">Unknown. Can't place my finger on it but its a toggle of some kind 1207</li>
+        <li data-tags="Unknown 1208">Unknown 1208</li>
+        <li data-tags="Unknown 1209">Unknown 1209</li>
+        <li data-tags="Wedding, Bride and Groom finish giving their vowels and Wedding moves onto the next stage, heard by everyone on the Game 1210">Wedding, Bride and Groom finish giving their vowels and Wedding moves onto the next stage, heard by everyone on the Game 1210</li>
+        <li data-tags="Possibly. Chest sitting in the map and Wedding blessing sitting in the Map 1211">Possibly. Chest sitting in the map and Wedding blessing sitting in the Map 1211</li>
+        <li data-tags="Possibly Chest spawn in the Map and Wedding Blessing spawns in the Map 1212">Possibly Chest spawn in the Map and Wedding Blessing spawns in the Map 1212</li>
+        <li data-tags="Open Chest 1213">Open Chest 1213</li>
+        <li data-tags="Unknown Chime 1214">Unknown Chime 1214</li>
+        <li data-tags="unknown Chime 1215">unknown Chime 1215</li>
+        <li data-tags="Chime Bell heard on Wedding Horse 1216">Chime Bell heard on Wedding Horse 1216</li>
+        <li data-tags="Unknown. Alarm of some kind. heard it before but can't remember 1217">Unknown. Alarm of some kind. heard it before but can't remember 1217</li>
+        <li data-tags="Unknown Magical Chime 1218">Unknown Magical Chime 1218</li>
+        <li data-tags="Door Lock or unlock 1219">Door Lock or unlock 1219</li>
+        <li data-tags="Door Lock Or unlock 1220">Door Lock Or unlock 1220</li>
+        <li data-tags="Possibly. Alarm telling you Event Bomb is about to explode 1221">Possibly. Alarm telling you Event Bomb is about to explode 1221</li>
+        <li data-tags="Unknown. Possibly an exploding Wall. Bricks 1222">Unknown. Possibly an exploding Wall. Bricks 1222</li>
+        <li data-tags="Unknown 1223">Unknown 1223</li>
+        <li data-tags="Unknown. Its a little Ding sound possibly letting you know an item is here to pick up on Event Map 1224">Unknown. Its a little Ding sound possibly letting you know an item is here to pick up on Event Map 1224</li>
+        <li data-tags="Teleport. Heard When Mages and Elves teleport 1225">Teleport. Heard When Mages and Elves teleport 1225</li>
+        <li data-tags="You Entered a Dungeon 1226">You Entered a Dungeon 1226</li>
+        <li data-tags="Unknown. Sounds like a deck of cards 1227">Unknown. Sounds like a deck of cards 1227</li>
+        <li data-tags="Unknown 1228">Unknown 1228</li>
+        <li data-tags="Unknown. Sounds like someone rolling a dice 1229">Unknown. Sounds like someone rolling a dice 1229</li>
+        <li data-tags="Unknown. Some kind of success 1230">Unknown. Some kind of success 1230</li>
+        <li data-tags="Arena. The Competition will start in 30 seconds, please get ready 1231">Arena. The Competition will start in 30 seconds, please get ready 1231</li>
+        <li data-tags="Arena. The Competition is about to start 1232">Arena. The Competition is about to start 1232</li>
+        <li data-tags="Dungeon. 1 minute remaining in the Dungeon 1233">Dungeon. 1 minute remaining in the Dungeon 1233</li>
+        <li data-tags="Dungeon. 10 second remaining in the Dungeon 1234">Dungeon. 10 second remaining in the Dungeon 1234</li>
+        <li data-tags="Arena. 1 minute remaining in the Battle First 1235">Arena. 1 minute remaining in the Battle First 1235</li>
+        <li data-tags="Arena. 10 second remaining in the Battle First 1236">Arena. 10 second remaining in the Battle First 1236</li>
+        <li data-tags="Arena. 1 minute remaining in the Battle Second 1237">Arena. 1 minute remaining in the Battle Second 1237</li>
+        <li data-tags="Arena. 10 second remaining in the Battle Second 1238">Arena. 10 second remaining in the Battle Second 1238</li>
+        <li data-tags="Arena. 1 Minute remaining in the Battle Third 1239">Arena. 1 Minute remaining in the Battle Third 1239</li>
+        <li data-tags="Arena. 10 Seconds remaining in the Battle Third 1240">Arena. 10 Seconds remaining in the Battle Third 1240</li>
+        <li data-tags="Unknown. Possibly something to do with Competitions 1241">Unknown. Possibly something to do with Competitions 1241</li>
+        <li data-tags="Airship from Sunset City to Giant Rock City 1242">Airship from Sunset City to Giant Rock City 1242</li>
+        <li data-tags="Airship from Giant Rock City to Sunset City 1243">Airship from Giant Rock City to Sunset City 1243</li>
+        <li data-tags="Airship from Giant Rock City to Whitesand City 1244">Airship from Giant Rock City to Whitesand City 1244</li>
+        <li data-tags="Airship from Whitesand City to Giant Rock City 1245">Airship from Whitesand City to Giant Rock City 1245</li>
+        <li data-tags="Airship from Tulip City to Moon City 1246">Airship from Tulip City to Moon City 1246</li>
+        <li data-tags="Airship from Moon City to Tulip City 1247">Airship from Moon City to Tulip City 1247</li>
+        <li data-tags="Airship Unknown. Possibly Tulip City to Violet City 1248">Airship Unknown. Possibly Tulip City to Violet City 1248</li>
+        <li data-tags="Airship Unknown. Possibly Violet City to Tulip City 1249">Airship Unknown. Possibly Violet City to Tulip City 1249</li>
+        <li data-tags="Airship Unknown 1250">Airship Unknown 1250</li>
+        <li data-tags="Airship Unknown 1251">Airship Unknown 1251</li>
+        <li data-tags="Airship Unknown 1252">Airship Unknown 1252</li>
+        <li data-tags="Airship Unknown 1253">Airship Unknown 1253</li>
+        <li data-tags="Underground Cart moving west 1254">Underground Cart moving west 1254</li>
+        <li data-tags="Underground Cart moving East 1255">Underground Cart moving East 1255</li>
+        <li data-tags="Unknown. Possibly Boss spawning sounds like male cackling 1256">Unknown. Possibly Boss spawning sounds like male cackling 1256</li>
+        <li data-tags="Breaking down Equipment 1257">Breaking down Equipment 1257</li>
+        <li data-tags="Pausing XP Card 1258">Pausing XP Card 1258</li>
+        <li data-tags="Unknown 1259">Unknown 1259</li>
+        <li data-tags="Unknown. Heard it lots of times, maybe something to do with map, perhaps a Chest just spawned 1260">Unknown. Heard it lots of times, maybe something to do with map, perhaps a Chest just spawned 1260</li>
+        <li data-tags="Unknown 1261">Unknown 1261</li>
+        <li data-tags="Critical Hit 1262">Critical Hit 1262</li>
+        <li data-tags="Unknown 1263">Unknown 1263</li>
+        <li data-tags="Unknown, possibly something to do with Ghoast baby 1264">Unknown, possibly something to do with Ghoast baby 1264</li>
+        <li data-tags="Unknown. Possibly something to do with Ghoast baby 1265">Unknown. Possibly something to do with Ghoast baby 1265</li>
+        <li data-tags="Unknown 1266">Unknown 1266</li>
+        <li data-tags="Unknown voice saying Merry Christmas  1267">Unknown voice saying Merry Christmas  1267</li>
+        <li data-tags="Unknown, possibly Santa saying Merry Christmas with Jingle Bells  1268">Unknown, possibly Santa saying Merry Christmas with Jingle Bells  1268</li>
+        <li data-tags="Unknown. Christmas, Santa with bells  1269">Unknown. Christmas, Santa with bells  1269</li>
+        <li data-tags="Unknown. Possibly a camel with jingling bells  1270">Unknown. Possibly a camel with jingling bells  1270</li>
+        <li data-tags="Unknown. Possible One of the competitions starting  1271">Unknown. Possible One of the competitions starting  1271</li>
+        <li data-tags="Unknown. Sounds like money going into a slot  1272">Unknown. Sounds like money going into a slot  1272</li>
+        <li data-tags="Unknown, possibly crafting potions, bottle water 1273">Unknown, possibly crafting potions, bottle water 1273</li>
+        <li data-tags="Unknown. drink being poured 1274">Unknown. drink being poured 1274</li>
+        <li data-tags="Unknown. Sounds like priest healing prayers then turns into Christmas song  1275">Unknown. Sounds like priest healing prayers then turns into Christmas song  1275</li>
+        <li data-tags="Unknown. Some kind of music box  1276">Unknown. Some kind of music box  1276</li>
+        <li data-tags="Unknown. Possibly Something to do with pets  1277">Unknown. Possibly Something to do with pets  1277</li>
+        <li data-tags="Unknown 1278">Unknown 1278</li>
+        <li data-tags="Possibly  wall breaking in Marshall dungeon, bricks 1279">Possibly  wall breaking in Marshall dungeon, bricks 1279</li>
+        <li data-tags="Unknown. Boing! 1280">Unknown. Boing! 1280</li>
+        <li data-tags="Unknown. cartoon Slip Sound  1281">Unknown. cartoon Slip Sound  1281</li>
+        <li data-tags="Unknown cartoon sound 1282">Unknown cartoon sound 1282</li>
+        <li data-tags="Unknown Pop bubble sound 1283">Unknown Pop bubble sound 1283</li>
+        <li data-tags="Unknown Twang 1284">Unknown Twang 1284</li>
+        <li data-tags="kiss 1285">kiss 1285</li>
+        <li data-tags="Firecracker 1 1286">Firecracker 1 1286</li>
+        <li data-tags="Firecracker 2 1287">Firecracker 2 1287</li>
+        <li data-tags="Firecracker 3 1288">Firecracker 3 1288</li>
+        <li data-tags="Possibly Chinese firecracker or regular 1289">Possibly Chinese firecracker or regular 1289</li>
+        <li data-tags="Fireworks possibly from wedding but it goes on for a long time 1290">Fireworks possibly from wedding but it goes on for a long time 1290</li>
+        <li data-tags="Little Fireworks 1291">Little Fireworks 1291</li>
+        <li data-tags="Unknown Firework event with music 1292">Unknown Firework event with music 1292</li>
+        <li data-tags="Dungeon Game countdown 1293">Dungeon Game countdown 1293</li>
+        <li data-tags="Dungeon Game Countdown end 1294">Dungeon Game Countdown end 1294</li>
+        <li data-tags="Unknown 1295">Unknown 1295</li>
+        <li data-tags="Unknown Piano key 1296">Unknown Piano key 1296</li>
+        <li data-tags="Unknown Piano key 2 1297">Unknown Piano key 2 1297</li>
+        <li data-tags="Unknow Piano key 3 1298">Unknow Piano key 3 1298</li>
+        <li data-tags="Unknown Piano key 4 1299">Unknown Piano key 4 1299</li>
+        <li data-tags="Unknown Piano 5 1300">Unknown Piano 5 1300</li>
+        <li data-tags="Unknown 1301">Unknown 1301</li>
+        <li data-tags="Unknown success 1302">Unknown success 1302</li>
+        <li data-tags="Unknown, strange mouth noise 1303">Unknown, strange mouth noise 1303</li>
+        <li data-tags="Unknown warning alarm 1304">Unknown warning alarm 1304</li>
+        <li data-tags="Unknown 1305">Unknown 1305</li>
+        <li data-tags="Unknown slam 1306">Unknown slam 1306</li>
+        <li data-tags="Unknown 1307">Unknown 1307</li>
+        <li data-tags="Unknown. Heard it many times but can't remember maybe mission 1308">Unknown. Heard it many times but can't remember maybe mission 1308</li>
+        <li data-tags="Unknown 1309">Unknown 1309</li>
+        <li data-tags="Unknown, something starting maybe 1310">Unknown, something starting maybe 1310</li>
+        <li data-tags="Unknown 1311">Unknown 1311</li>
+        <li data-tags="Drip In Cave 1312">Drip In Cave 1312</li>
+        <li data-tags="Possibly. Stone door opening 1313">Possibly. Stone door opening 1313</li>
+        <li data-tags="Possibly. Stone door closing 1314">Possibly. Stone door closing 1314</li>
+        <li data-tags="Unknown Teleporting away 1315">Unknown Teleporting away 1315</li>
+        <li data-tags="Ice Bomb like the one you find in Event maps that slow down Monsters 1316">Ice Bomb like the one you find in Event maps that slow down Monsters 1316</li>
+        <li data-tags="Cracking sound, Possibly Ice, stone something breaking 1317">Cracking sound, Possibly Ice, stone something breaking 1317</li>
+        <li data-tags="Unknown, something stone moving and scraping 1318">Unknown, something stone moving and scraping 1318</li>
+        <li data-tags="Unknown, Stone sliding 1319">Unknown, Stone sliding 1319</li>
+        <li data-tags="Full Potion. When you tap to drink a potion but either your mana or HP is already full 1320">Full Potion. When you tap to drink a potion but either your mana or HP is already full 1320</li>
+        <li data-tags="Music Box. Puts monsters to sleep on event map 1321">Music Box. Puts monsters to sleep on event map 1321</li>
+        <li data-tags="Unknown, big loud grandfather clock 1323">Unknown, big loud grandfather clock 1323</li>
+        <li data-tags="Electrical Spawn sound, sometimes heard when you spawn in a pet Draggon 1324">Electrical Spawn sound, sometimes heard when you spawn in a pet Draggon 1324</li>
+        <li data-tags="Possibly putting or getting blade/knife/dagger from storage 2001">Possibly putting or getting blade/knife/dagger from storage 2001</li>
+                <li data-tags="Throw away Sword/Weapons 2002">Throw away Sword/Weapons 2002</li>
+        <li data-tags="Pick up a Sword/Weapon Storage 2003">Pick up a Sword/Weapon Storage 2003</li>
+        <li data-tags="Put down the Sword/weapon. put Sword into Storage 2004">Put down the Sword/weapon. put Sword into Storage 2004</li>
+        <li data-tags="Metal Equipment is about to damage 2005">Metal Equipment is about to damage 2005</li>
+        <li data-tags="Equipment is Damaged sounds like broken glass 2006">Equipment is Damaged sounds like broken glass 2006</li>
+        <li data-tags="Swinging Sword 2007">Swinging Sword 2007</li>
+        <li data-tags="Throw SWord 2008">Throw SWord 2008</li>
+        <li data-tags="Sword/weapon hits Target STab 2009">Sword/weapon hits Target STab 2009</li>
+        <li data-tags="Equipment Damaged sounds like ripping 2010">Equipment Damaged sounds like ripping 2010</li>
+        <li data-tags="Get hat storage 2011">Get hat storage 2011</li>
+        <li data-tags="Drop Hat Trash/junk/throw away 2012">Drop Hat Trash/junk/throw away 2012</li>
+        <!-- Add more items as needed xxx -->
+    </ul>
+
+    <p id="noResultsMessage">No results could be found. Check back later as the page is being worked on in real-time.</p>
+
+    <div id="lastUpdated">
+        <h2>Last Updated, Monday, October 30th, 2023. 12:54PM GMT. Result: 3.74 Percent Completed</h2>
+        <p>3. Added more sounds, including storage house, potion, event map and others.</p>
+        <p>2. Added the ability to submit a Form through Google Forms to assist me in identifying unknown sounds in the list.</p>
+        <p>1. Added a download Link to the .Ogg files that were decoded by someone on the game.</p>
+    </div>
+
+    <script>
+        document.getElementById('searchInput').addEventListener('input', function () {
+            const searchValue = this.value.toLowerCase();
+            const soundList = document.getElementById('soundList');
+            const items = soundList.getElementsByTagName('li');
+            const noResultsMessage = document.getElementById('noResultsMessage');
+
+            let anyResults = false;
+
+            for (const item of items) {
+                const tags = item.getAttribute('data-tags').toLowerCase();
+                const shouldShow = tags.includes(searchValue);
+                item.style.display = shouldShow ? 'block' : 'none';
+
+                if (shouldShow) {
+                    anyResults = true;
+                }
+            }
+
+            noResultsMessage.style.display = anyResults ? 'none' : 'block';
+        });
+
+        // Show/hide the Unknown Sound Detection Form based on the checkbox state
+        const unknownSoundCheckbox = document.getElementById('unknownSoundCheckbox');
+        const unknownSoundForm = document.getElementById('unknownSoundForm');
+
+        unknownSoundCheckbox.addEventListener('change', function () {
+            unknownSoundForm.style.display = this.checked ? 'block' : 'none';
+        });
+    </script>
+
+</body>
+
+</html>
